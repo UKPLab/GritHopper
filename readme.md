@@ -34,7 +34,6 @@ Using the decoder model in an encoder-only approach (like [MDR](https://github.c
 - **Out-of-Distribution Robustness**: Achieves **state-of-the-art** performance compared to other decomposition-free methods on multiple OOD benchmarks.  
 - **Unified Training**: Combines dense retrieval with generative objectives, exploring how post-retrieval information on the generation loss improves dense retrieval performance. 
 - **Stopping**: GritHopper utilizes its generative capabilities via ReAct to control its own state. This way, it can stop itself through causal next-token prediction. 
----
 
 ---
 
