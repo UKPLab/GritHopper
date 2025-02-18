@@ -1,3 +1,7 @@
+
+[![GitHub - License](https://img.shields.io/github/license/UKPLab/arxiv2024-triple-encoders?logo=github&style=flat&color=green)][#github-license]
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/triple-encoders?logo=pypi&style=flat&color=blue)][#pypi-package]
+[![PyPI - Package Version](https://img.shields.io/pypi/v/triple-encoders?logo=pypi&style=flat&color=orange)][#pypi-package]
 <p align="center">
   <img src="static/GritHopperLogo.jpeg" alt="GritHopper Logo" height="250px" align="left" style="position: relative; z-index: 1;">
   <div align="center">
@@ -9,8 +13,14 @@
 </p>
 
 <br clear="left"/>
+<p align="center">
+    🤗 <a href="https://huggingface.co/UKPLab/triple-encoders-dailydialog" target="_blank">Models</a>  | 📃 <a href="https://aclanthology.org/2024.acl-long.290/" target="_blank">Paper</a>
+</p>
+<!--- BADGES: START, copied from sentence transformers, will be replaced with the actual once (removed for anonymity)--->
 
 ---
+
+
 
 GritHopper is a **state-of-the art multi-hop dense retrieval framework** that builds upon **GRITLM**. GritHopper is the first decoder-based decomposition-free multi-hop dense retrieval model, trained on a multi-hop tasks spanning both question-answering and fact-checking. By leveraging an **encoder-only** paradigm (similar to MDR), GritHopper requires a single forward pass for one hop while maintaining strong generalizability across out-of-distribution tasks. 
 
