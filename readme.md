@@ -39,6 +39,7 @@ Using the decoder model in an encoder-only approach (like [MDR](https://github.c
 ---
 
 ## Staring with GritHopper
+GritHopper is trained on [MuSiQue](https://aclanthology.org/2022.tacl-1.31/), [2WikiMultiHopQA](https://aclanthology.org/2020.coling-main.580.pdf), [HotPotQA](https://aclanthology.org/D18-1259.pdf), [EX-Fever](https://aclanthology.org/2024.findings-acl.556/) and [HoVer](https://aclanthology.org/2020.findings-emnlp.309/). 
 
 ### GritHopper Models 
 | Model Name                          | Datasets     | Description                                                                                                                                                              | Model Size |
