@@ -13,13 +13,14 @@
       <h1>GritHopper: Decomposition-Free<br>
       Multi-Hop Dense Retrieval</h1>
     </h1>
+    <p align="center">
+    🤗 <a href="https://huggingface.co/UKPLab/triple-encoders-dailydialog" target="_blank">Models</a>  | 📃 <a href="https://aclanthology.org/2024.acl-long.290/" target="_blank">Paper</a>
+</p>
   </div>
 </p>
 
 <br clear="left"/>
-<p align="center">
-    🤗 <a href="https://huggingface.co/UKPLab/triple-encoders-dailydialog" target="_blank">Models</a>  | 📃 <a href="https://aclanthology.org/2024.acl-long.290/" target="_blank">Paper</a>
-</p>
+
 <!--- BADGES: START, copied from sentence transformers, will be replaced with the actual once (removed for anonymity)--->
 
 ---
