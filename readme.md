@@ -1,7 +1,11 @@
-
+<!--- BADGES: START, copied from sentence transformers, will be replaced with the actual once (removed for anonymity)--->
 [![GitHub - License](https://img.shields.io/github/license/UKPLab/arxiv2024-triple-encoders?logo=github&style=flat&color=green)][#github-license]
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/triple-encoders?logo=pypi&style=flat&color=blue)][#pypi-package]
 [![PyPI - Package Version](https://img.shields.io/pypi/v/triple-encoders?logo=pypi&style=flat&color=orange)][#pypi-package]
+
+
+[#github-license]: https://github.com/
+[#pypi-package]: https://pypi.org/project/triple-encoders/
 <p align="center">
   <img src="static/GritHopperLogo.jpeg" alt="GritHopper Logo" height="250px" align="left" style="position: relative; z-index: 1;">
   <div align="center">
