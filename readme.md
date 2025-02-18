@@ -25,16 +25,16 @@
 
 ---
 
+GritHopper is the first **decoder-based** multi-hop dense retrieval model and achieves **state-of-the-art performance** on both **in-distribution and out-of-distribution** benchmarks for **decomposition-free multi-hop dense retrieval**. Built on [GRITLM](https://github.com/ContextualAI/gritlm), it is trained across diverse datasets spanning **question-answering** and **fact-checking**. Unlike traditional decomposition-based approaches, GritHopper iteratively retrieves passages without explicit sub-question decomposition, concatenating retrieved evidence with the query at each step.
 
-
-GritHopper is a **state-of-the art multi-hop dense retrieval framework** that builds upon **GRITLM**. GritHopper is the first decoder-based decomposition-free multi-hop dense retrieval model, trained on a multi-hop tasks spanning both question-answering and fact-checking. By leveraging an **encoder-only** paradigm (similar to MDR), GritHopper requires a single forward pass for one hop while maintaining strong generalizability across out-of-distribution tasks. 
+Using the decoder model in an encoder-only approach (like [MDR](https://github.com/facebookresearch/multihop_dense_retrieval)), it performs each retrieval step in a single forward pass. In contrast to previous SOTA BERT-based approaches (like [BeamRetriever](https://github.com/canghongjian/beam_retriever) or [MDR](https://github.com/facebookresearch/multihop_dense_retrieval)), GritHopper generalizes significantly better to **out-of-distribution** data.
 
 ## Key Strengths of GritHopper
-- **Scalable Multi-Hop**: Handles multi-hop questions in **open-domain** scenarios without relying on discrete decomposition steps.  
 - **Encoder-Only Efficiency**: Each retrieval iteration requires only a single forward pass (rather than multiple autoregressive steps).  
-- **Out-of-Distribution Robustness**: Achieves **state-of-the-art** performance on multiple OOD benchmarks.  
-- **Unified Training**: Combines dense retrieval with generative objectives, exploring how to adapt ReAct as a state-control for the dense retrieval using causal generation. 
-- **Easy Integration**: Functions as a Python library that lets you **load document candidates**, **encode queries**, and **iteratively retrieve** relevant passages with optional stopping logic.
+- **Out-of-Distribution Robustness**: Achieves **state-of-the-art** performance compared to other decomposition-free methods on multiple OOD benchmarks.  
+- **Unified Training**: Combines dense retrieval with generative objectives, exploring how post-retrieval information on the generation loss improves dense retrieval performance. 
+- **Stopping**: GritHopper utilizes its generative capabilities via ReAct to control its own state. This way, it can stop itself through causal next-token prediction. 
+---
 
 ---
 
@@ -169,5 +169,24 @@ This process continues until either:
 	3.	Or no documents can be retrieved at a given step.
 
 ---
-### Training 
-for training, we used GRITLM.
+## Citation
+If you use GritHopper in your research, please cite the following paper:
+```
+TBD
+```
+## Contact
+Contact person: Justus-Jonas Erker, justus-jonas.erker@tu-darmstadt.de
+
+https://www.ukp.tu-darmstadt.de/
+
+https://www.tu-darmstadt.de/
+
+Don't hesitate to send us an e-mail or report an issue, if something is broken (and it shouldn't be) or if you have further questions.
+This repository contains experimental software and is published for the sole purpose of giving additional background details on the respective publication. 
+
+## License
+GritHopper is licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE) for the full license text.
+
+
+### Acknowledgement
+this Model is based upon the [GRITLM](https://github.com/ContextualAI/gritlm). 
