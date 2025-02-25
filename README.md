@@ -14,7 +14,7 @@
       Multi-Hop Dense Retrieval</h1>
     </h1>
     <p align="center">
-    🤗 <a href="https://huggingface.co/UKPLab/GritHopper" target="_blank">Models</a>  | 📃 <a href="TBD" target="_blank">Paper</a>
+    🤗 <a href="https://huggingface.co/UKPLab/GritHopper-7B" target="_blank">Models</a>  | 📃 <a href="TBD" target="_blank">Paper</a>
 </p>
   </div>
 </p>
@@ -43,7 +43,7 @@ GritHopper is trained on [MuSiQue](https://aclanthology.org/2022.tacl-1.31/), [2
 ### GritHopper Models 
 | Model Name                          | Datasets     | Description                                                                                                                                                              | Model Size |
 |-------------------------------------|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------| --- |
-| [GritHopper-7B](https://huggingface.co/UKPLab/GritHopper)                | All Datasets | GritHopper trained on Answers as Post-Retrieval information (SOTA)                                                                                                       | 7B |
+| [GritHopper-7B](https://huggingface.co/UKPLab/GritHopper-7B)                | All Datasets | GritHopper trained on Answers as Post-Retrieval information (SOTA)                                                                                                       | 7B |
 ### 1. Installation
 
 ```bash
@@ -55,7 +55,7 @@ from grithopper import GritHopper
 
 # Initialize GritHopper with your GRITLM model checkpoint or huggingface path
 hopper = GritHopper(
-    model_name_or_path="UKPLab/GritHopper",  
+    model_name_or_path="UKPLab/GritHopper-7B",  
     device="cuda"  # or "cpu"
 )
 ```
