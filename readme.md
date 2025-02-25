@@ -55,7 +55,7 @@ from grithopper import GritHopper
 
 # Initialize GritHopper with your GRITLM model checkpoint or huggingface path
 hopper = GritHopper(
-    model_name_or_path="GritHopper-7B",  
+    model_name_or_path="UKPLab/GritHopper",  
     device="cuda"  # or "cpu"
 )
 ```
