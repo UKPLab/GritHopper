@@ -5,7 +5,7 @@ with open("README.md", mode="r", encoding="utf-8") as readme_file:
 
 setup(
     name="grithopper",
-    version="0.0.1",
+    version="0.0.2",
     author="Justus-Jonas Erker",
     author_email="justus-jonas.erker@tu-darmstadt.de",
     download_url="https://github.com/UKPLab/GritHopper/",
@@ -14,7 +14,7 @@ setup(
     long_description_content_type="text/markdown",
     license="Apache License 2.0",
     packages=find_packages(),
-    python_requires="==3.9.19",
+    python_requires=">=3.9.19",
     install_requires=[
         'gritlm==1.0.2',
     ],
