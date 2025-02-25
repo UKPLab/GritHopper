@@ -43,7 +43,7 @@ GritHopper is trained on [MuSiQue](https://aclanthology.org/2022.tacl-1.31/), [2
 ### GritHopper Models 
 | Model Name                          | Datasets     | Description                                                                                                                                                              | Model Size |
 |-------------------------------------|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------| --- |
-| GritHopper-7B                | All Datasets | GritHopper trained on Answers as Post-Retrieval information (SOTA)                                                                                                       | 7B |
+| [GritHopper-7B](https://huggingface.co/UKPLab/GritHopper)                | All Datasets | GritHopper trained on Answers as Post-Retrieval information (SOTA)                                                                                                       | 7B |
 ### 1. Installation
 
 ```bash
