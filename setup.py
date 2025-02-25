@@ -5,7 +5,7 @@ with open("README.md", mode="r", encoding="utf-8") as readme_file:
 
 setup(
     name="grithopper",
-    version="0.0.3",
+    version="0.0.4",
     author="Justus-Jonas Erker",
     author_email="justus-jonas.erker@tu-darmstadt.de",
     download_url="https://github.com/UKPLab/GritHopper/",
