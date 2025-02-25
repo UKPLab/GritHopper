@@ -47,6 +47,7 @@ class GritHopper:
     def __init__(
         self,
         model_name_or_path: str,
+        base_model_name: str = "GritLM/GritLM-7B",
         device: str = "cuda",
         torch_dtype: torch.dtype = torch.bfloat16,
         attn: str = "bbcc",
@@ -70,7 +71,7 @@ class GritHopper:
         """
         self.device = device
         self.model = GritLM(
-            model_name_or_path=model_name_or_path,
+            model_name_or_path=base_model_name,
             mode="unified",
             pooling_method=pooling_method,
             normalized=normalized,
@@ -79,9 +80,24 @@ class GritHopper:
             embed_eos=embed_eos,
             attn=attn,
             torch_dtype=torch_dtype,
-        ).to(device)
-
+        )
         self.tokenizer = self.model.tokenizer
+
+
+        print(f"Loading fine-tuned weights from Hugging Face Hub: {model_name_or_path}...")
+        state_dict = torch.hub.load_state_dict_from_url(
+            f"https://huggingface.co/{model_name_or_path}/resolve/main/pytorch_model.bin",
+            map_location=self.device
+        )
+
+        # Apply fine-tuned weights
+        self.model.load_state_dict(state_dict, strict=False)
+
+        # model to device
+        self.model.to(self.device)
+
+        self.model.eval()
+
         self.doc_embeddings = None  # Will store pre-encoded documents
         self.doc_texts = None       # Will store corresponding (title, passage) pairs
         self.stopping_ids = {
