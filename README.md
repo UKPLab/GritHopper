@@ -14,7 +14,7 @@
       Multi-Hop Dense Retrieval</h1>
     </h1>
     <p align="center">
-    🤗 <a href="https://huggingface.co/UKPLab/GritHopper-7B" target="_blank">Models</a>  | 📃 <a href="TBD" target="_blank">Paper</a>
+    🤗 <a href="https://huggingface.co/UKPLab/GritHopper-7B" target="_blank">Models</a>  | 📃 <a href="https://arxiv.org/pdf/2503.07519" target="_blank">Paper</a>
 </p>
   </div>
 </p>
@@ -172,7 +172,15 @@ This process continues until either:
 ## Citation
 If you use GritHopper in your research, please cite the following paper:
 ```
-TBD
+@misc{erker2025grithopperdecompositionfreemultihopdense,
+      title={GRITHopper: Decomposition-Free Multi-Hop Dense Retrieval}, 
+      author={Justus-Jonas Erker and Nils Reimers and Iryna Gurevych},
+      year={2025},
+      eprint={2503.07519},
+      archivePrefix={arXiv},
+      primaryClass={cs.IR},
+      url={https://arxiv.org/abs/2503.07519}, 
+}
 ```
 ## Contact
 Contact person: Justus-Jonas Erker, justus-jonas.erker@tu-darmstadt.de
