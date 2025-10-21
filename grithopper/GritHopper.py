@@ -24,8 +24,9 @@ DEFAULT_MULTI_HOP_INSTRUCTION = (
 )
 
 DEFAULT_FACT_CHECK_INSTRUCTION = (
-    "You are given a claim. Retrieve relevant documents to fact-check the claim. "
-    "Once enough evidence has been gathered, provide a final verdict."
+     "You verify multi-hop fact checking claims by iteratively retrieving documents. "
+     "If a document is relevant, think by yourself which information is important to continue the search. "
+     "If a document is irrelevant, stop the search. Once all information is extracted to verify the claim, provide whether it is supported or not."
 )
 
 document_gap = "Action: Evaluating retrieved Document: Relevant. \n" + "Extracted information: " + "Think yourself" + "\n"
