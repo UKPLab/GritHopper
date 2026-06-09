@@ -14,7 +14,7 @@
       Multi-Hop Dense Retrieval</h1>
     </h1>
     <p align="center">
-    🌐 <a href="https://ukplab.github.io/eacl2026-GritHopper/" target="_blank">Website</a>  |  🤗 <a href="https://huggingface.co/UKPLab/GritHopper-7B" target="_blank">Models</a>  | 📃 <a href="https://arxiv.org/pdf/2503.07519" target="_blank">Paper</a>
+    🌐 <a href="https://ukplab.github.io/eacl2026-GritHopper/" target="_blank">Website</a>  |  🤗 <a href="https://huggingface.co/UKPLab/GritHopper-7B" target="_blank">Models</a>  | 📃 <a href="https://aclanthology.org/2026.eacl-long.5.pdf" target="_blank">Paper</a>
 </p>
   </div>
 </p>
@@ -172,14 +172,24 @@ This process continues until either:
 ## Citation
 If you use GritHopper in your research, please cite the following paper:
 ```
-@misc{erker2025grithopperdecompositionfreemultihopdense,
-      title={GRITHopper: Decomposition-Free Multi-Hop Dense Retrieval}, 
-      author={Justus-Jonas Erker and Nils Reimers and Iryna Gurevych},
-      year={2025},
-      eprint={2503.07519},
-      archivePrefix={arXiv},
-      primaryClass={cs.IR},
-      url={https://arxiv.org/abs/2503.07519}, 
+@inproceedings{erker-etal-2026-grithopper,
+    title = "{GRITH}opper: Decomposition-Free Multi-Hop Dense Retrieval",
+    author = "Erker, Justus-Jonas  and
+      Reimers, Nils  and
+      Gurevych, Iryna",
+    editor = "Demberg, Vera  and
+      Inui, Kentaro  and
+      Marquez, Llu{\'i}s",
+    booktitle = "Proceedings of the 19th Conference of the {E}uropean Chapter of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+    month = mar,
+    year = "2026",
+    address = "Rabat, Morocco",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.eacl-long.5/",
+    doi = "10.18653/v1/2026.eacl-long.5",
+    pages = "77--94",
+    ISBN = "979-8-89176-380-7",
+    abstract = "Decomposition-based multi-hop retrieval methods rely on many autoregressive steps to break down complex queries, which breaks end-to-end differentiability and is computationally expensive. Decomposition-free methods tackle this, but current approaches struggle with longer multi-hop problems and generalization to out-of-distribution data. To address these challenges, we introduce GRITHopper-7B, a novel multi-hop dense retrieval model that achieves state-of-the-art performance on both in-distribution and out-of-distribution benchmarks. GRITHopper-7B combines generative and representational instruction tuning by integrating causal language modeling with dense retrieval training. Through controlled studies, we find that incorporating additional context after the retrieval process, referred to as post-retrieval language modeling, enhances dense retrieval performance. By including elements such as final answers during training, the model learns to better contextualize and retrieve relevant information. GRITHopper-7B offers a robust, scalable, and generalizable solution for multi-hop dense retrieval, and we release it to the community for future research and applications requiring complex reasoning and retrieval capabilities."
 }
 ```
 ## Contact
